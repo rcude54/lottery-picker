@@ -48,7 +48,7 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 425px; /* custom width for the github page only */
+    width: 425px !important; /* custom width for the github page only */
 }
 
 .dn {
