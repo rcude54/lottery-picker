@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <script src="js/jquery-2.2.0.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="javascript">
+            $.support.cors = true;
+        </script>
+        <title>Lottery Picker</title>
+    </head>
+    <body>
+        <div class="container">
+            <div cass="row">
+                <h2 class="col-xs-12">Lottery Picker App</h2>
+            </div>
+            <div class="row">
+                <h4>How it Works:
+                    <small>
+                        This app will simulate lottery drawings,
+                        based on how many samples you want to use.
+                        Then the number of times a given number has
+                        been drawn is recorded and then measured to
+                        pick the top 5 numbers and 1 powerball based
+                        on the sample size.
+                    </small>
+                </h4>
+            </div>
+
+            <div class="row">
+                <form class="input-form">
+                    <div class="row">
+                        <h6 class="col-xs-12">Enter how many samples you would like to record</h6>
+                    </div>
+                    <div class="row">
+                        <input class="col-xs-offset-4 col-xs-4" id="times-to-run" type="number" name="timesToRun" value="5000"/>
+                        <div id="finish-time" class="col-xs-4"></div>
+                    </div>
+                    <div class="row buttons">
+                        <input id="run" type="submit" value="Run" class="btn col-xs-4 col-xs-offset-2">
+                        <input id="clear" type="submit" value="Clear" class="btn col-xs-4">
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <div id="results" class="col-xs-2  col-xs-offset-5 dn">
+                </div>
+            </div>
+        </div>
+        <script src="js/lottery.js" ></script>
+    </body>
+</html>
