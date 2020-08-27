@@ -1,0 +1,27 @@
+{
+  "name": "lottery-picker-refactor",
+  "version": "0.0.1",
+  "description": "A lottery picker application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcude54/lottery-picker.git"
+  },
+  "author": "Darrin Johnson ft. Ryan Cude",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcude54/lottery-picker/issues"
+  },
+  "homepage": "https://github.com/rcude54/lottery-picker#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "express": "^4.17.1",
+    "jquery": "^2.2.0",
+    "jquery-mobile": "^1.5.0-alpha.1",
+    "jsdom": "^16.4.0",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Lottery Application",
+    "short_name": "Lotto",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#333",
+    "description": "Lottery Web Application",
+    "icons": [{
+        "src": "images/lotto_icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }]
+  }
